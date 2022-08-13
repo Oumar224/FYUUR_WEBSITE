@@ -25,7 +25,7 @@ class Venue(db.Model):
     seeking_talent=db.Column(db.Boolean , default=False)
     seeking_description=db.Column(db.Text)
     image_link = db.Column(db.String(500))
-    shows=db.relationship('Show', backref='venue', cascade='save-update' , collection_class='list' , lazy=True)
+    shows=db.relationship('Show', backref='venue', lazy=True)
     
 
     # TODO: implement any missing fields, as a database migration using Flask-Migrate(valider)
@@ -44,7 +44,7 @@ class Artist(db.Model):
     seeking_venue=db.Column(db.Boolean , default=False)
     seeking_description=db.Column(db.Text)
     image_link = db.Column(db.String(500))
-    shows=db.relationship('Show', backref='artist', cascade='save-update' , collection_class='list' , lazy=True)
+    shows=db.relationship('Show', backref='artist', lazy=True)
     # TODO: implement any missing fields, as a database migration using Flask-Migrate(valider)
 
 class Show(db.Model):
