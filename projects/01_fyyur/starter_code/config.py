@@ -20,7 +20,8 @@ SQLALCHEMY_TRACK_MODIFICATIONS=True
 
 
 # TODO IMPLEMENT DATABASE URL
-SQLALCHEMY_DATABASE_URI ='postgresql://{}:{}@{}:{}/musiccatalogue'.format(username , password , ip_adresse , port)
+# SQLALCHEMY_DATABASE_URI ='postgresql://{}:{}@{}:{}/musiccatalogue'.format(username , password , ip_adresse , port)
+SQLALCHEMY_DATABASE_URI ="postgres://yfozkdscwkzprp:92581287dbc5841a3536d35ba84f17add813ba8263e3e8b03185c4f71cafb276@ec2-34-193-44-192.compute-1.amazonaws.com:5432/dd40ick3tgaa2q"
 
 
 #search index baseapp
