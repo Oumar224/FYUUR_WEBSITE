@@ -1,14 +1,14 @@
-import os
-from dotenv import load_dotenv
+# import os
+# from dotenv import load_dotenv
 
-load_dotenv()
-username=os.getenv("USER_NAME")
-password=os.getenv("PASSWORD")
-ip_adresse=os.getenv("IP_ADRESSE")
-port=os.getenv("PORT")
-SECRET_KEY = os.urandom(32)
-# Grabs the folder where the script runs.
-basedir = os.path.abspath(os.path.dirname(__file__))
+# load_dotenv()
+# username=os.getenv("USER_NAME")
+# password=os.getenv("PASSWORD")
+# ip_adresse=os.getenv("IP_ADRESSE")
+# port=os.getenv("PORT")
+# SECRET_KEY = os.urandom(32)
+# # Grabs the folder where the script runs.
+# basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Enable debug mode.
 DEBUG = True
